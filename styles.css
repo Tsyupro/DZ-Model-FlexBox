@@ -1,0 +1,123 @@
+body{
+    background-color:dimgrey;
+    color:azure;
+    font-family: Arial, sans-serif; 
+    font-weight: normal; 
+}
+h1{
+ margin: 0;   
+}
+.container {
+    margin: auto;
+    padding: 10px;
+    width: 1000px;
+    height: 1600px; 
+    border: 2px solid white;
+}
+img{
+    border: 2px solid white;
+}
+
+.container img {
+    width: 70px;
+    height: 70px;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 30px;
+}
+.logo img {
+    border: 0;
+}
+.colum-right {
+    display: flex;
+    margin-left: 500px;
+    flex-direction: row; 
+}
+
+.colum-right p {
+    margin-left: 10px;
+}
+.main-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bio{
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+}
+.images img{
+    height: 100%;
+    width: 300px;
+}
+.text{
+    padding-left: 10px;
+    font-size: 12px;
+}
+.container-photo, .container-photo-two,.container-photo-free{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ margin: 10px;
+} 
+.container-photo-for{
+    display: flex;
+ align-items: center;
+ justify-content: center;
+ margin: 10px;
+}
+ .container-photo img {
+    height: 200px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.container-photo-two img {
+    height: 200px;
+    width: 450px;
+    margin-right: 10px;
+}
+.container-photo-free img {
+    height: 100px;
+    width: 150px;
+    margin-right: 10px;
+}
+.container-photo-for img {
+    height: 500px;
+    width: 1000px;
+    margin-right: 10px;
+    position: relative;
+    transition: filter 0.3s;
+}
+.container-photo-free img:hover {
+    filter: brightness(50%); 
+}
+
+.container-photo-free img:hover::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    color: white;
+    opacity: 0; 
+    transition: opacity 0.3s, transform 0.3s; 
+}
+
+.container-photo-free img:hover::before {
+    opacity: 1; 
+    transform: translate(-50%, -50%) scale(1.5); 
+}
+
+.vlad{
+    display: flex;
+    flex-direction: column;
+}
+.Max-Text{
+    font-size: 18px;
+}
+
