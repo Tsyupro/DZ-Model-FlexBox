@@ -1,158 +1,174 @@
-body{
-    background-color:dimgrey;
-    color:azure;
-    font-family: Arial, sans-serif; 
-    font-weight: normal; 
+body {
+    background-color: dimgrey;
+    color: azure;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
 }
-h1{
- margin: 0;   
-}
+
 .container {
     margin: auto;
     padding: 10px;
     width: 1000px;
-    height: 1700px; 
-    border: 2px solid white;
-}
-img{
+    height: 1700px;
     border: 2px solid white;
 }
 
-.container img {
-    width: 70px;
-    height: 70px;
-}
-.logo{
+.logo {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-left: 30px;
 }
+
 .logo img {
     border: 0;
+    width: 70px;
+    height: 70px;
 }
+
 .colum-right {
     display: flex;
     flex-direction: row;
     margin-left: 500px;
 }
+
 .colum-right ul {
-    list-style-type: none; 
+    list-style-type: none;
     display: flex;
     margin: 0;
     padding: 0;
 }
-.colum-right a{
+
+.colum-right a {
     text-decoration: none;
-    color: white; 
+    color: white;
 }
+
 .colum-right li {
-    margin-right: 15px; 
+    margin-right: 15px;
 }
-.main-menu{
+
+.title {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 30px;
 }
-.bio{
+
+.bio {
     padding-left: 30px;
     display: flex;
     align-items: center;
 }
-.images img{
+
+.images img {
     height: 100%;
     width: 300px;
 }
-.text{
+
+.bio-text {
     display: flex;
     flex-direction: column;
     padding-left: 10px;
     font-size: 12px;
 }
-.text ul{
-    list-style-type: none; 
+
+.bio-text ul {
+    list-style-type: none;
 }
-.text li{
+
+.bio-text li {
     position: relative;
     margin-right: 15px;
-    padding: 2px; 
+    padding: 2px;
 }
-.text li::before {
-    content: "-"; 
-    margin-right: 5px; 
+
+.bio-text li::before {
+    content: "-";
+    margin-right: 5px;
     color: white;
 }
-.text a{
+
+.bio-text a {
     padding: 5px;
     text-decoration: none;
-    color: white; 
-
+    color: white;
 }
 
-.container-photo, .container-photo-two,.container-photo-free{
- display: flex;
- align-items: center;
- justify-content: space-between;
- margin: 10px;
-} 
-.container-photo-for{
+.photo-gallery,
+.image-collection,
+.visuals-section {
     display: flex;
- align-items: center;
- justify-content: center;
- margin: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
 }
- .container-photo img {
-    height: 200px;
-    width: 300px;
+
+.photo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.photo-gallery img,
+.image-collection img,
+.visuals-section img,
+.photo-container img {
     margin-right: 10px;
 }
 
-.container-photo-two img {
+.photo-gallery img,
+.image-collection img {
     height: 200px;
-    width: 450px;
-    margin-right: 10px;
 }
-.container-photo-free img {
+
+.image-collection img {
+    width: 450px;
+}
+
+.visuals-section img {
     height: 100px;
     width: 150px;
-    margin-right: 10px;
 }
-.container-photo-for img {
+
+.photo-container img {
     height: 500px;
     width: 1000px;
-    margin-right: 10px;
     position: relative;
     transition: filter 0.3s;
 }
-.container-photo-free img:hover {
-    filter: brightness(50%); 
+
+.visuals-section img:hover {
+    filter: brightness(50%);
 }
 
-.container-photo-free img:hover::before {
+.visuals-section img:hover::before {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 36px;
     color: white;
-    opacity: 0; 
-    transition: opacity 0.3s, transform 0.3s; 
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
 }
 
-.container-photo-free img:hover::before {
-    opacity: 1; 
-    transform: translate(-50%, -50%) scale(1.5); 
+.visuals-section img:hover::before {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.5);
 }
 
-.vlad{
+.profile {
     display: flex;
     flex-direction: column;
     font-size: 12px;
 }
-.Max-Text{
+
+.max-text {
     font-size: 18px;
 }
+
 footer {
     text-align: left;
     padding: 20px 30px;
