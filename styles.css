@@ -11,7 +11,7 @@ h1{
     margin: auto;
     padding: 10px;
     width: 1000px;
-    height: 1600px; 
+    height: 1700px; 
     border: 2px solid white;
 }
 img{
@@ -33,17 +33,27 @@ img{
 }
 .colum-right {
     display: flex;
+    flex-direction: row;
     margin-left: 500px;
-    flex-direction: row; 
 }
-
-.colum-right p {
-    margin-left: 10px;
+.colum-right ul {
+    list-style-type: none; 
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.colum-right a{
+    text-decoration: none;
+    color: white; 
+}
+.colum-right li {
+    margin-right: 15px; 
 }
 .main-menu{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 30px;
 }
 .bio{
     padding-left: 30px;
@@ -55,9 +65,31 @@ img{
     width: 300px;
 }
 .text{
+    display: flex;
+    flex-direction: column;
     padding-left: 10px;
     font-size: 12px;
 }
+.text ul{
+    list-style-type: none; 
+}
+.text li{
+    position: relative;
+    margin-right: 15px;
+    padding: 2px; 
+}
+.text li::before {
+    content: "-"; 
+    margin-right: 5px; 
+    color: white;
+}
+.text a{
+    padding: 5px;
+    text-decoration: none;
+    color: white; 
+
+}
+
 .container-photo, .container-photo-two,.container-photo-free{
  display: flex;
  align-items: center;
@@ -116,8 +148,13 @@ img{
 .vlad{
     display: flex;
     flex-direction: column;
+    font-size: 12px;
 }
 .Max-Text{
     font-size: 18px;
 }
-
+footer {
+    text-align: left;
+    padding: 20px 30px;
+    font-size: 12px;
+}
